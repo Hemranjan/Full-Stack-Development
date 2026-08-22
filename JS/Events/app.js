@@ -19,6 +19,11 @@ for(btn of btns) {
 
     btn.addEventListener("click",sayHello);
     btn.addEventListener("click",sayName);  //isme multiple events or value assign kar sakte hai.
+
+    btn.addEventListener("dblclick", function() {  //here callback function is used
+        console.log("you double clicked me");
+        alert("double clicked");
+    });
 }
 
 function sayHello() {
