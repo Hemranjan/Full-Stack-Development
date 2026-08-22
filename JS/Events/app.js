@@ -33,3 +33,8 @@ function sayHello() {
 function sayName() {
     alert("Apna College");
 }
+
+let p = document.querySelector("p");
+p.addEventListener("dblclick", function () {
+    alert("Activity detected");
+});
