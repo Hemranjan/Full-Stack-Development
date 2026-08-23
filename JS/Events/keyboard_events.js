@@ -4,7 +4,7 @@ inp.addEventListener("keydown", function (event) {
     console.log("code =", event.code); // ArrowUp(U), ArrowDown(D), ArrowLeft(L), ArrowRight(R)
 
     if (event.code == "KeyU") {
-        console.log("character moves up");  
+        console.log("character moves up");
     } else if (event.code == "KeyD") {
         console.log("character moves down");
     } else if (event.code == "KeyL") {
