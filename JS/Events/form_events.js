@@ -5,18 +5,20 @@ let form = document.querySelector("form");
 //     alert("form submitted");
 // });
 
+
 //Code 1 — Using document.querySelector():-
-form.addEventListener("submit", function (event) {
-    event.preventDefault();
+// form.addEventListener("submit", function (event) {
+//     event.preventDefault();
 
-    let user = document.querySelector("#user");
-    let pass = document.querySelector("#pass");
+//     let user = document.querySelector("#user");
+//     let pass = document.querySelector("#pass");
 
-    console.log(user.value);  //value ku likhe hai samjna hai
-    console.log(pass.value);
+//     console.log(user.value);  //value ku likhe hai samjna hai
+//     console.log(pass.value);
 
-    alert(`Hi ${user.value}, your password is set to ${pass.value}`);
-});
+//     alert(`Hi ${user.value}, your password is set to ${pass.value}`);
+// });
+
 
 
 
@@ -36,3 +38,23 @@ form.addEventListener("submit", function (event) {
 
 //     alert(`Hi ${user.value}, your password is set to ${pass.value}`);
 // });
+
+
+
+//change and input event:-
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+});
+
+let user = document.querySelector("#user");
+
+user.addEventListener("change", function () {
+    console.log("change event");
+    console.log("final value =", this.value);
+});
+
+user.addEventListener("input", function () {
+    console.log("input event");
+    console.log("final value =", this.value);
+});
