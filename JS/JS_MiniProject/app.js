@@ -35,3 +35,5 @@ ul.addEventListener("click", function(event) {
 //         par.remove();
 //     });
 // }
+
+let inpd = document.querySelector("button");
