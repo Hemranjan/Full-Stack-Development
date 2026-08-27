@@ -36,4 +36,6 @@ ul.addEventListener("click", function(event) {
 //     });
 // }
 
-let inpd = document.querySelector("button");
+let ind = document.querySelector("button");
+
+let inds = document.querySelector("button");
