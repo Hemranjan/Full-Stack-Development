@@ -32,9 +32,12 @@ body {
 }
 
 .flash {
-    background-color: white;
+    background-color: pink;
 }
 
 .userflash {
-    background-color: green;
+    background-color: white;
+}
+.game-over {
+    background-color: red;
 }
