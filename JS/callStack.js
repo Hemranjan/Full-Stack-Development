@@ -1,17 +1,25 @@
-// function hello () {
-//     console.log("hello");
+function hello() {
+    console.log("inside hello fnx");
+    console.log("hello");
+}
+
+function demo() {
+    console.log("calling hello fnx");
+    hello();
+}
+
+console.log("calling demo fnx");
+demo();
+console.log("done, bye!");
+
+// function first() {
+//   console.log("First");
+//   second();
+//   console.log("First ends");
 // }
 
-// hello();
+// function second() {
+//   console.log("Second");
+// }
 
-function first() {
-  console.log("First");
-  second();
-  console.log("First ends");
-}
-
-function second() {
-  console.log("Second");
-}
-
-first();
+// first();
