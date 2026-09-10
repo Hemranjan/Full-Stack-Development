@@ -10,7 +10,7 @@ function saveToDb(data) {
     });
 }
 
-
+//then() & catch():-
 let request = saveToDb("apnacollege");
 
 request
