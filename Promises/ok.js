@@ -1,1 +1,2 @@
 let ok;
+let yes;
