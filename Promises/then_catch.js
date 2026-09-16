@@ -14,9 +14,11 @@ function saveToDb(data) {
 let request = saveToDb("apnacollege");
 
 request
-    .then(() => {
-        console.log("promise resolved");
+    .then((resolve) => {
+        console.log(resolve);
+        //console.log("promise resolved");
     })
-    .catch(() => {
-        console.log("promise rejected");
+    .catch((error) => {
+        console.log(error);
+        //console.log("promise rejected");
 });
