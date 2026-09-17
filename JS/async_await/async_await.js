@@ -14,7 +14,7 @@ async function showData() {
 
     console.log("Inside 1");
 
-    const data = await getData();
+    const data = await getData();  //understand the output order clearly then you know about await.
 
     console.log(data);
 
