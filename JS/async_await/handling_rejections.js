@@ -7,6 +7,7 @@ function changeColor(color, delay) {
 
             if (num > 3) {
                 reject("promise rejected");
+                return;
             }
 
             h1.style.color = color;
