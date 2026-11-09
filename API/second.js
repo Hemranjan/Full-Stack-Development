@@ -1,3 +1,5 @@
+//using async and await:-
+
 let url = "https://catfact.ninja/fact";
 
 async function getFacts() {

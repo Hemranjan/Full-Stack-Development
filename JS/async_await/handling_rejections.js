@@ -106,3 +106,4 @@ demo();
 // | `resolve()` | Promise succeeds → `try` continues |
 // | `reject()`  | Promise fails → `try` stops        |
 // | `catch`     | Handles the rejection/error        |
+
