@@ -1,25 +1,50 @@
-// const axios = require("axios");
-let url = "https://catfact.ninja/fact";
+// // const axios = require("axios");
+// //let url = "https://catfact.ninja/fact";
+// let btn = document.querySelector("button");
+
+// btn.addEventListener('click', async()=> {
+//     let fact = await getFacts()
+//     console.log(fact);
+//     let p = document.querySelector("#result");
+//     p.innerText = fact;
+// })
+
+
+// async function getFacts() {
+//     try {
+//         let res = await axios.get(url);
+//         //let data = await res.json();
+//         //console.log(res);
+//         return res.data.fact;
+
+//     } catch (e) {
+//         console.log("error - ", e);
+//         return "no fact found";
+//     }
+// }
+// getFacts();
+
 let btn = document.querySelector("button");
+let url2 = "https://dog.ceo/api/breeds/image/random";
 
-btn.addEventListener('click', async()=> {
-    let fact = await getFacts()
-    console.log(fact);
-    let p = document.querySelector("#result");
-    p.innerText = fact;
-})
+btn.addEventListener("click", async () => {
+    let link = await getImage();
 
+    // console.log(link);
 
-async function getFacts() {
+    let img = document.querySelector("#result");
+    img.setAttribute("src", link);
+
+    console.log(link);
+});
+
+async function getImage() {
     try {
-        let res = await axios.get(url);
-        //let data = await res.json();
-        //console.log(res);
-        return res.data.fact;
+        let res = await axios.get(url2);
+        return res.data.message;
 
     } catch (e) {
         console.log("error - ", e);
-        return "no fact found";
+        return "/";
     }
 }
-getFacts();
