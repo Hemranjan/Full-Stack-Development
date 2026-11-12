@@ -4,9 +4,12 @@
   "description": "",
   "license": "ISC",
   "author": "Hem Ranjan",
-  "type": "commonjs",
+  "type": "module",
   "main": "module.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "random-words": "^2.0.1"
   }
 }

@@ -7,3 +7,6 @@
 //using import:-
 import {sum,PI} from "./module_reference2.js";
 console.log(sum(2,2));
+
+import { generate } from "random-words";
+console.log(generate());
