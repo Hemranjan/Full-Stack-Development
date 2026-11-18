@@ -8,6 +8,11 @@ app.listen(port, () => {
     console.log(`listening on port ${port}`);
 })
 
+app.use(express.static(path.join(__dirname,"/public/css")));  //this is used for static files including css and js as a response from the server according to the users request
+//public folder ka yahi kaam hai
+//__dirname se jis folder me run kar rahe usse bahar bhi hai toh run ho jayega
+app.use(express.static(path.join(__dirname,"/public/js")));
+
 app.set("view engine", "ejs");  //view = templates
 app.set("views", path.join(__dirname, "/views"));  //app ke andar set kar rahe views naam ka folder is jagah.toh isse directly search karlega views ko
 
