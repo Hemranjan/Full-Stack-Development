@@ -20,5 +20,12 @@ app.get("/rolldice", (req,res) => {
     res.render("rolldice.ejs", {diceVal});
 })
 
+app.get("/ig/:username", (req,res) => {
+
+    const followers = ["rahul","hem","ayush","tanush","sumit"];
+    let {username} = req.params;
+    res.render("instagram.ejs", {username,followers});
+})
+
 //through ejs we cant send responses although we render responses
 //render me huge file bhej sakte hai.
