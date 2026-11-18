@@ -15,6 +15,10 @@ app.get("/", (req,res) => {
     res.render("home.ejs");      
 })
 
+app.get("/rolldice", (req,res) => {
+    let diceVal = Math.floor(Math.random() * 6) + 1;
+    res.render("rolldice.ejs", {diceVal});
+})
+
 //through ejs we cant send responses although we render responses
 //render me huge file bhej sakte hai.
-
