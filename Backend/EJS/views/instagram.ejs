@@ -1,12 +1,17 @@
-<!DOCTYPE html>
+<%- include("includes/head.ejs") %> 
+<!--  kaha se include kar rahe ,ham apne include folder se head.ejs se include kar rahe hai.
+include => ham koi small sa part or sub-template include kar rahe hai. -->
+
+
+<!-- <!DOCTYPE html> 
 <html lang="en">
-<head>
+<head>  //head part include head.ejs ke liye kiye hai,isse styling copy ho jati hai.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
     <link rel="stylesheet" href="/style.css" >
 
-</head>
+</head> -->
 <body>
     <!-- <h2>This page belongs to @<=username%> </h2> -->
     <h2>This page belongs to <%= data.name %> </h2>
@@ -31,6 +36,9 @@
         </p>
     <% } %>
 
+    <%- include("includes/footer.ejs") %>
 </body>
 <script  src="/app.js"></script>
 </html>
+
+<!-- views folder ham templates store karne ke liye banate hai -->
